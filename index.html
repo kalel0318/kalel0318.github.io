@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Kalel Sada, Florida State University, Finance and Accounting. Background, deal experience, and what I would bring to Recalc.">
+<title>Kalel Sada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF; --wash:#EFF6FC; --sky:#A9D3F0; --blue:#2F6FA6; --ink:#1A2530; --muted:#5A6977; --line:#E2EAF1;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"Work Sans", "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;padding-inline:20px}
+a{color:var(--blue);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+p{margin:0}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:760px;margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.15;text-wrap:balance}
+h2{font-size:2rem;margin-bottom:22px}
+h3{font-size:1.2rem;font-family:var(--sans);font-weight:600;line-height:1.35}
+.label{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.muted{color:var(--muted)}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin-inline:-20px;padding:14px 20px;z-index:3}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+nav .name{font-family:var(--serif);font-size:1.15rem;text-decoration:none;color:var(--ink)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:20px;flex-wrap:wrap}
+nav ul a{font-size:.88rem;color:var(--muted);text-decoration:none}
+nav ul a:hover{color:var(--blue)}
+
+.hero{display:grid;grid-template-columns:1fr 200px;gap:40px;align-items:center;padding-block:72px 64px}
+.hero h1{font-size:clamp(2.8rem,7vw,4rem);margin-block:6px 18px}
+.hero p.intro{font-size:1.15rem;color:var(--muted);max-width:48ch}
+.headshot{width:200px;aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:50% 20%;border:6px solid var(--wash)}
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{font-size:.9rem;font-weight:500;text-decoration:none;padding:10px 18px;border-radius:999px;border:1px solid var(--sky);color:var(--ink);background:var(--bg)}
+.btn.fill{background:var(--sky);border-color:var(--sky)}
+.btn:hover{border-color:var(--blue)}
+
+section{padding-block:60px;border-top:1px solid var(--line)}
+.prose{display:grid;gap:18px}
+
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:30px}
+.facts div{background:var(--bg);padding:16px 18px}
+.facts b{display:block;font-family:var(--serif);font-weight:500;font-size:1.5rem;color:var(--blue);font-variant-numeric:tabular-nums}
+.facts span{font-size:.85rem;color:var(--muted);line-height:1.4;display:block}
+
+.jobs{display:grid;gap:34px}
+.job{display:grid;grid-template-columns:150px 1fr;gap:24px}
+.job .when{font-size:.85rem;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}
+.job .role{color:var(--muted);font-size:.95rem;margin-bottom:8px}
+.job p.body{font-size:.98rem}
+.job .body + .body{margin-top:10px}
+
+.learn{display:grid;gap:14px}
+.card{background:var(--wash);border-radius:10px;padding:22px 24px;display:grid;gap:8px}
+.card p{font-size:.98rem}
+
+.snapshot{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.snapshot .card h3{font-size:1.05rem}
+.snapshot .card .tag{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+
+.list{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.list li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.97rem;flex-wrap:wrap}
+.list li span{color:var(--muted);font-size:.9rem}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.gallery figure{margin:0;display:grid;gap:8px}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+.gallery figcaption{font-size:.82rem;color:var(--muted)}
+
+.bring{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
+.bring li{padding-left:18px;border-left:3px solid var(--sky)}
+
+.mail{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:20px}
+.mail code{font-family:var(--sans);font-size:1.05rem;padding:10px 16px;border:1px solid var(--line);border-radius:999px;user-select:all}
+.mail button{font:inherit;font-size:.9rem;font-weight:500;padding:10px 18px;border-radius:999px;border:1px solid var(--sky);background:var(--sky);color:var(--ink);cursor:pointer}
+.mail button:hover{border-color:var(--blue)}
+.li{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:500;text-decoration:none;color:var(--blue);padding:10px 16px;border:1px solid var(--line);border-radius:999px}
+.li:hover{border-color:var(--blue)}
+.li-icon{color:var(--blue);display:inline-flex}
+.li-icon:hover{color:var(--ink)}
+button.btn{font-family:inherit;cursor:pointer;line-height:inherit}
+.viewer{position:fixed;inset:0;z-index:20;background:rgba(20,32,44,.72);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px)}
+.viewer-bar{max-width:880px;width:100%;margin-inline:auto;display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:.9rem;padding-bottom:10px}
+.viewer-bar button{font:inherit;font-weight:500;padding:8px 16px;border-radius:999px;border:0;background:var(--sky);color:var(--ink);cursor:pointer}
+.viewer-body{max-width:880px;width:100%;margin-inline:auto;overflow:auto;flex:1;background:#fff;border-radius:8px}
+.viewer-body img{width:100%;height:auto}
+footer{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-block:26px 40px;font-size:.82rem;color:var(--muted)}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero{grid-template-columns:1fr;padding-block:48px}
+  .headshot{order:-1;width:140px}
+  .facts{grid-template-columns:1fr 1fr}
+  .job{grid-template-columns:1fr;gap:4px}
+  .snapshot{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+
+<nav>
+  <div class="wrap">
+    <a class="name" href="#top">Kalel Sada</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#snapshot">This semester</a></li>
+      <li><a href="#outside">Outside work</a></li>
+      <li><a href="#recalc">Recalc</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <div>
+      <p class="label">Florida State University · Class of 2029</p>
+      <h1>Hi, I'm Kalel.</h1>
+      <p class="intro">I'm a sophomore from Miami studying Finance and Accounting. I've worked on small deals from both sides, as a buyer at a search fund and as an advisor at an M&amp;A brokerage, and I want to keep learning how good investments get made.</p>
+      <div class="links">
+        <button type="button" class="btn fill" id="open-resume">View resume</button>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <img class="headshot" src="img/headshot.jpg" alt="Kalel Sada in a navy suit and light blue tie">
+  </header>
+
+  <section id="about">
+    <p class="label">About me</p>
+    <h2>How I got into finance</h2>
+    <div class="prose">
+      <p>I'm from the Coral Gables and Coconut Grove area of Miami. Most of my childhood was spent on a baseball field or on a jiujitsu mat, and both gave me a competitive streak I still have. They also made me comfortable with losing, as long as I understood why.</p>
+      <p>Finance found me through school. At Coral Gables Senior High I competed in FBLA, which pulled me into accounting, and a teacher who took my questions seriously showed me that the numbers on a financial statement tell you how a business really works. From there I wanted to know which businesses were worth owning and why.</p>
+      <p>I spent my first semester of college in London, then came to Tallahassee and got involved with the Finance Society's Investment Banking and Alternatives group. This year I moved from learning about deals to working on them.</p>
+    </div>
+    <div class="facts">
+      <div><b>3.80</b><span>GPA, Finance &amp; Accounting</span></div>
+      <div><b>8,000+</b><span>accounting firms sourced at a search fund</span></div>
+      <div><b>1,000+</b><span>business owners cold-called</span></div>
+      <div><b>$1.6M</b><span>my first live deal, business + real estate</span></div>
+      <div><b>250+</b><span>members in the FBLA chapter I led</span></div>
+      <div><b>1 of 16</b><span>students selected for Noles on Wall Street</span></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="label">Experience</p>
+    <h2>Where I've been working</h2>
+    <div class="jobs">
+      <article class="job">
+        <p class="when">May 2026 – Present</p>
+        <div>
+          <h3>AMB Advisory Services</h3>
+          <p class="role">M&amp;A Analyst · Tampa</p>
+          <p class="body">This is where I worked my first live deal. We advised a buyer on a leveraged acquisition of a small business and its real estate, valued at up to $1.6M. I ran valuation comps on both the business and the property and worked through how rent increases and different term-loan structures changed the buyer's cash flow and equity return. I also cold-called more than 1,000 business owners and reached out to 100+ private equity firms to build the firm's pipeline.</p>
+        </div>
+      </article>
+      <article class="job">
+        <p class="when">Mar – May 2026</p>
+        <div>
+          <h3>Sunshine Capital</h3>
+          <p class="role">Private Equity Intern · Tampa</p>
+          <p class="body">Sunshine is a search fund acquiring small accounting firms, generally at 0.7x to 0.9x revenue. I sourced over 8,000 firms, reached out to owners, built comps, and pitched targets to the fund principal. Talking directly with owners who had spent decades building their practices showed me that selling a business is a personal decision as much as a financial one. It was my first real look at the buy side, and it taught me to judge a target by how well it fits the strategy, not just by its revenue.</p>
+        </div>
+      </article>
+      <article class="job">
+        <p class="when">Jul – Aug 2024</p>
+        <div>
+          <h3>Miami-Dade County Office of the Tax Collector</h3>
+          <p class="role">Accounting &amp; Finance Intern · Miami</p>
+          <p class="body">I worked closely with the county's CFO on vehicle renewals and property tax collections, and analyzed multi-year trends in revenue and spending across property, real estate and vehicle taxes. At the end of the summer I gave a full presentation of my findings to the Tax Collector himself, Peter Cam.</p>
+          <p class="body">He was the last Tax Collector before the position became an independent, elected office, so I got to see the county's finances right before a major change in how they're run.</p>
+        </div>
+      </article>
+      <article class="job">
+        <p class="when">Aug – Dec 2025</p>
+        <div>
+          <h3>FSU London Student Council</h3>
+          <p class="role">Treasurer · London</p>
+          <p class="body">My semester was the first year FSU created a student council for the First Semester Abroad program, so we were building everything from nothing. I volunteered to create and take on a treasurer role, and set up how we budgeted, tracked and reported spending on our $5,000+ semester budget. The role is still part of the council today.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="learning">
+    <p class="label">What I've been learning</p>
+    <h2>Things I keep thinking about</h2>
+    <div class="learn">
+      <div class="card">
+        <h3>Small details move deal returns</h3>
+        <p>On the AMB deal, I was surprised how much a rent step-up or a change in the loan term moved what the buyer walked away with. Working through those scenarios made leverage feel real to me, and it's a big reason I want to get better at LBO modeling.</p>
+      </div>
+      <div class="card">
+        <h3>What makes a target worth buying</h3>
+        <p>Screening thousands of accounting firms taught me that the numbers are only the first cut. Owner count, headcount, location and niche services mattered just as much to whether a firm fit the fund's strategy.</p>
+      </div>
+      <div class="card">
+        <h3>Pitching tech stocks</h3>
+        <p>As a Tech Group Analyst in FSU's Undergraduate Investment Fund, a 36-person team managing $13M, I'm learning to build a thesis from industry research, competitive analysis and regulation, then defend a valuation in front of the group.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="snapshot">
+    <p class="label">Fall 2026 snapshot</p>
+    <h2>Learning from mentors while mentoring others</h2>
+    <div class="prose">
+      <p>This semester feels like a turning point for me. For the first time, I'm on both sides of mentorship at once. Community is what got me this far, and giving back is how I want to keep it going.</p>
+    </div>
+    <div class="snapshot">
+      <div class="card">
+        <p class="tag">Being mentored</p>
+        <h3>Noles on Wall Street</h3>
+        <p>I'm one of sixteen students in a yearlong program run by FSU upperclassmen and alumni with banking and private equity experience. Every week they give up their time to push us on technicals, interviews and recruiting, the same way someone once did for them.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Mentoring</p>
+        <h3>Freshmen in IBA</h3>
+        <p>A year ago I was the freshman with all the questions. Now I run mock interviews and technical walkthroughs for new IBA members, and I'm bringing an FSU freshman on as an intern at AMB Advisory so they can get deal experience early.</p>
+      </div>
+    </div>
+    <ul class="list">
+      <li>Noles on Wall Street <span>Cohort member, 1 of 16</span></li>
+      <li>FSU Undergraduate Investment Fund <span>Tech Group Analyst</span></li>
+      <li>Finance Society, Investment Banking &amp; Alternatives <span>Mentor</span></li>
+      <li>SEO Career, AIIB <span>Program member</span></li>
+      <li>JPMorgan Career.edYOU Academy <span>2026 cohort</span></li>
+      <li>Roark Capital Wall Street Club <span>Member</span></li>
+    </ul>
+  </section>
+
+  <section id="outside">
+    <p class="label">Outside of work</p>
+    <h2>A few more things about me</h2>
+    <div class="prose">
+      <p>If my friends and family had three words to describe me, they would be tenacious, discerning and genuine. Tenacious because I don't let go of things that matter to me: I pushed hard to earn a spot in FSU's First Semester Abroad program in London, and it turned out to be one of the best experiences of my life. Discerning because as a kid I asked so many questions my parents ran out of answers. Genuine because I'd rather say what I actually think than what's easy.</p>
+      <p>I found my love for surfing abroad, on a trip from London to Wales. These days I lift weights, watch FSU football, and follow the Padres (mostly for Fernando Tatis Jr.). During COVID I played Overwatch competitively and reached the top 500 players in the country. And I'm usually listening to Daft Punk, the Black Eyed Peas or 90s hip-hop.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="img/baseball.jpg" alt="Kalel running on the field in a black and red baseball uniform, number 25"><figcaption>Varsity baseball, Coral Gables</figcaption></figure>
+      <figure><img src="img/london.jpg" alt="Kalel in front of Big Ben and Parliament at dusk" style="object-position:62% 50%"><figcaption>Parliament, London</figcaption></figure>
+      <figure><img src="img/surfing.jpg" alt="Kalel holding a surfboard on a beach in a wetsuit"><figcaption>Surfing in Wales</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="recalc">
+    <p class="label">Recalc</p>
+    <h2>What I'd bring to Recalc</h2>
+    <div class="prose">
+      <p>I've seen small deals from the buy side at a search fund and from the advisory side at a brokerage. Both made me want to understand investing more deeply, and Recalc's training in accounting, business analysis and LBO modeling is exactly what I'm missing. FSU doesn't have a large alumni presence in finance, so a cohort and mentors who genuinely care would matter a lot to me.</p>
+      <p>Here is what I hope to bring back to the community:</p>
+    </div>
+    <ul class="bring">
+      <li><b>A habit of catching up fast.</b> I didn't start exploring a career in finance until late in my freshman year, and I was behind a lot of my peers. It wasn't the first time: I also started baseball later than most of my high school teammates and had to close that gap quickly. Both times, the extra work paid off.</li>
+      <li><b>What I've learned recruiting from a non-target.</b> I'm still early in my career, but I've learned a lot about finding opportunities without a big alumni network, from cold outreach to leaning on mentors. I'd be glad to share what has worked for me and learn what has worked for others.</li>
+      <li><b>A commitment to giving back.</b> I already mentor underclassmen at FSU, and I'd want to do the same for future Recalc cohorts.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <p class="label">Contact</p>
+    <h2>Thanks for reading.</h2>
+    <p class="muted">I'd love to talk more about any of this.</p>
+    <div class="mail">
+      <code id="email">kalel.sada@gmail.com</code>
+      <button type="button" id="copy">Copy email</button>
+      <a class="li" href="https://www.linkedin.com/in/kalel-sada/" target="_blank" rel="noopener" aria-label="Kalel Sada on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+    </div>
+  </section>
+
+  <footer><span>Kalel Sada · Florida State University</span><a class="li-icon" href="https://www.linkedin.com/in/kalel-sada/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></footer>
+</main>
+
+
+<div class="viewer" id="resume" hidden>
+  <div class="viewer-bar">
+    <span>Kalel Sada · Resume</span>
+    <span style="display:flex;gap:8px"><a href="Kalel-Sada-Resume.pdf" target="_blank" rel="noopener" style="font-weight:500;padding:8px 16px;border-radius:999px;background:#fff;color:var(--ink);text-decoration:none">Open PDF</a><button type="button" id="close-resume" aria-label="Close resume">Close</button></span>
+  </div>
+  <div class="viewer-body" id="resume-body">
+    <img src="img/resume-2026-09.png" alt="Kalel Sada's resume">
+  </div>
+</div>
+<script>
+(function(){
+  var v=document.getElementById('resume'), o=document.getElementById('open-resume'), c=document.getElementById('close-resume');
+  function open(){v.hidden=false;document.body.style.overflow='hidden';c.focus();}
+  function close(){v.hidden=true;document.body.style.overflow='';o.focus();}
+  o.addEventListener('click',open); c.addEventListener('click',close);
+  v.addEventListener('click',function(e){if(e.target===v)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!v.hidden)close();});
+})();
+
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, el=document.getElementById('email');
+  function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';}
+  try{navigator.clipboard.writeText(el.textContent).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1800)},sel);}catch(e){sel();}
+});
+</script>
+
+</body>
+</html>
